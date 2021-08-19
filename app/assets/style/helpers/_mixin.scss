@@ -1,0 +1,8 @@
+@mixin bg-cover($width, $height, $position) {
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: $position;
+    @content;
+}

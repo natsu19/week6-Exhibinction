@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- header -->
+    <%- include('_header.ejs') %>
+
+    <!-- banner -->
+    <div class="pt-md-20 pt-15">
+      <div class="banner">
+        <div class="container h-100 pb-20 pb-md-0">
+          <div class="h-100 row justify-content-center align-items-end align-items-md-center">
+            <ul class="col-12 col-md-10 text-white">
+              <li>
+                <h2 class="fs-4 mb-2">台北當代藝術展</h2>
+              </li>
+              <li class="fs-7 mb-4">01 JUN - 31 OCT</li>
+              <li class="row g-4 g-md-2">
+                  <div class="col col-md-4 col-lg-2 ">
+                    <a href="#" class="btn btn-secondary w-100">購買票券</a>
+                  </div>
+                  <div class="col col-md-4 col-lg-2">
+                    <a href="#" class="btn btn-outline-white w-100">詳細資訊</a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- nav -->
+    <%- include('_nav.ejs') %>
+
+    <%- contents %>
+
+    <%- include('_footer.ejs') %>

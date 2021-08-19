@@ -1,0 +1,21 @@
+header{
+    z-index: $zindex-sticky;
+}
+.nav-top{
+    height: 3.75rem;
+    @include media-breakpoint-up(md){
+        height: 5rem;
+    }
+
+    .nav-link{
+        color: $dark;
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    .cart-number{
+        width: 22px;
+        height: 18px;
+    }
+}
