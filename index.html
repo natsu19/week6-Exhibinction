@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EXHIBINECTION ｜ 展覽</title>
     <link rel="stylesheet" href="assets/style/all.css">
+    
   </head>
 
   <body>
@@ -30,7 +31,7 @@
                     confirmation_number
                     </span>
                     <span
-                    class="cart-number fs-9 text-white align-top position-absolute start-65 top-35 translate-middle bg-secondary rounded-circle">
+                    class="cart-number fs-6 text-white align-top position-absolute start-65 top-35 translate-middle bg-secondary rounded-circle">
                     3
                     </span>
                 </button>
@@ -40,34 +41,65 @@
   </header>
 
     <!-- banner -->
-    <div class="pt-md-20 pt-15">
+    <section class="pt-md-20 pt-15">
       <div class="banner">
         <div class="container h-100 pb-20 pb-md-0">
           <div class="h-100 row justify-content-center align-items-end align-items-md-center">
             <ul class="col-12 col-md-10 text-white">
               <li>
-                <h2 class="fs-4 mb-2">台北當代藝術展</h2>
+                <h2 class="fs-1 mb-2">台北當代藝術展</h2>
               </li>
-              <li class="fs-7 mb-4">01 JUN - 31 OCT</li>
-              <li class="row g-4 g-md-2">
+              <li class="fs-4 mb-4">01 JUN - 31 OCT</li>
+              <li class="row g-2 g-md-1">
                   <div class="col col-md-4 col-lg-2 ">
-                    <a href="#" class="btn btn-secondary w-100">購買票券</a>
+                    <a href="#" class="btn btn-secondary w-100 lh-lg" aria-label="票券購買">購買票券</a>
                   </div>
                   <div class="col col-md-4 col-lg-2">
-                    <a href="#" class="btn btn-outline-white w-100">詳細資訊</a>
+                    <a href="#" class="btn btn-outline-white w-100 lh-lg" aria-label="展覽詳細內容">詳細資訊</a>
                   </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- nav -->
-    <div class="nav-main poposition-sticky">
-666666
-</div>
+    <nav class="nav-main poposition-sticky bg-white border-bottom border-1 border-gray">
+    <div class="container  swiper-container">
+        <ul class="ms-auto me-auto col-9 row justify-content-between py-2 swiper-wrapper">
+            <li class="col swiper-slide">
+                <a href="#" title="連結至音樂" aria-label="連結至音樂" class="lh-lg nav-link">音樂</a>
+            </li>
+            <li class="col swiper-slide">
+                <a href="#" title="連結至戲劇" aria-label="連結至戲劇" class="lh-lg nav-link">戲劇</a>
+            </li>
+            <li class="col swiper-slide">
+                <a href="design.html" title="連結至設計" aria-label="連結至設計" class="lh-lg nav-link">設計</a>
+            </li>
+            <li class="col swiper-slide">
+                <a href="#" title="連結至藝術" aria-label="連結至藝術" class="lh-lg nav-link">藝術</a>
+            </li>
+            <li class="col swiper-slide">
+                <a href="#" title="連結至美食" aria-label="連結至美食" class="lh-lg nav-link">美食</a>
+            </li>
+            <li class="col swiper-slide">
+                <a href="#" title="連結至旅遊" aria-label="連結至旅遊" class="lh-lg nav-link">旅遊</a>
+            </li>
+            <li class="col swiper-slide">
+                <a href="#" title="連結至電影" aria-label="連結至電影" class="lh-lg nav-link">電影</a>
+            </li>
+            <li class="col swiper-slide">
+                <a href="#" title="連結至親子" aria-label="連結至親子" class="lh-lg nav-link">親子</a>
+            </li>
+            <li class="col swiper-slide">
+                <a href="#" title="連結至期間限定" aria-label="連結至期間限定" class="lh-lg nav-link">期間限定</a>
+            </li>
+        </ul>
+    </div>
+    
+</nav>
 
     
 <div class="container">
@@ -82,4 +114,18 @@
   <script src="./assets/js/all.js"></script>
 </body>
 
+</html>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="dist/js/swiper-bundle.min.js"></script>
+
+    <script>        
+      var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical', // 垂直切换选项
+        loop: true, // 循环模式选项
+      })        
+      </script>
+  </body>
+  
 </html>
