@@ -6,3 +6,16 @@
     background-position: $position;
     @content;
 }
+
+
+@mixin hover_underline ($color,$textcolor,$hovercolor) {
+    color: $textcolor !important;
+    border-bottom: 1px solid rgba($color,0%);
+    transition: all 0.25s ease-in-out;
+
+    &:hover{
+        color: $hovercolor !important;
+        border-bottom: 1px solid rgba($color,100%);
+    }
+    @content;
+}

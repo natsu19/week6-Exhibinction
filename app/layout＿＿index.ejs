@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
     <link rel="stylesheet" href="assets/style/all.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
   </head>
 
   <body>
@@ -14,33 +17,67 @@
     <%- include('_header.ejs') %>
 
     <!-- banner -->
-    <div class="pt-md-20 pt-15">
+    <section class="pt-md-20 pt-15">
       <div class="banner">
         <div class="container h-100 pb-20 pb-md-0">
           <div class="h-100 row justify-content-center align-items-end align-items-md-center">
             <ul class="col-12 col-md-10 text-white">
               <li>
-                <h2 class="fs-4 mb-2">台北當代藝術展</h2>
+                <h2 class="fs-1 mb-2">台北當代藝術展</h2>
               </li>
-              <li class="fs-7 mb-4">01 JUN - 31 OCT</li>
-              <li class="row g-4 g-md-2">
+              <li class="fs-4 mb-4">01 JUN - 31 OCT</li>
+              <li class="row g-2 g-md-1">
                   <div class="col col-md-4 col-lg-2 ">
-                    <a href="#" class="btn btn-secondary w-100">購買票券</a>
+                    <a href="#" class="btn btn-secondary w-100 lh-lg" aria-label="票券購買">購買票券</a>
                   </div>
                   <div class="col col-md-4 col-lg-2">
-                    <a href="#" class="btn btn-outline-white w-100">詳細資訊</a>
+                    <a href="#" class="btn btn-outline-white w-100 lh-lg" aria-label="展覽詳細內容">詳細資訊</a>
                   </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- nav -->
     <%- include('_nav.ejs') %>
+    
 
     <%- contents %>
 
     <%- include('_footer.ejs') %>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {});
+ 
+      var mySwiper = new Swiper('.swiper-container',{
+  
+      breakpoints: { 
+        320: {  //当屏幕宽度大于等于320
+          slidesPerView: 5,
+          slidesPerGroup: 2
+        },
+        768: {  //当屏幕宽度大于等于768 
+          slidesPerView: 6,
+          slidesPerGroup: 3
+        },
+        1280: {  //当屏幕宽度大于等于1280
+          slidesPerView: 9,
+          slidesPerGroup: 0
+        },
+      }
+    })
+    
+    </script>
+       
+  </body>
+  
+</html>
