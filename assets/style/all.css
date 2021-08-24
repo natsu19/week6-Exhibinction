@@ -11297,17 +11297,11 @@ dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 1rem;
   background: #EFEFEF; }
   @media (min-width: 768px) {
     .card-img-2div {
-      margin-bottom: 1.25rem;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+      margin-bottom: 1.25rem; } }
   .card-img-2div ul {
     padding-left: 0; }
   @media (min-width: 768px) {
@@ -11319,11 +11313,32 @@ dl {
     -o-object-fit: cover;
        object-fit: cover; }
   .card-img-2div .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0.5rem 1rem 1.5rem;
     font-size: 1.25rem; }
     @media (min-width: 768px) {
       .card-img-2div .card-body {
         padding: 2.5rem 1.5rem; } }
+    .card-img-2div .card-body .title {
+      font-weight: 700; }
+    .card-img-2div .card-body .price {
+      margin-bottom: 0.5rem; }
+    .card-img-2div .card-body .content {
+      font-weight: 500;
+      font-size: 1rem;
+      margin-bottom: 1.25rem; }
+      @media (min-width: 992px) {
+        .card-img-2div .card-body .content {
+          font-size: 1.25rem; } }
   .card-img-2div .date {
     display: -webkit-box;
     display: -ms-flexbox;
