@@ -11419,6 +11419,72 @@ dl {
         .card-img-2div .date-body a:hover {
           color: #630834 !important; }
 
+.sidebar-cart-item {
+  background: #fff;
+  margin-bottom: 0.75rem;
+  border-radius: 2px solid #000; }
+  .sidebar-cart-item .top {
+    padding-left: 0.25rem;
+    padding-top: 0.25rem; }
+    .sidebar-cart-item .top .btn {
+      width: 24px;
+      height: 24px; }
+  .sidebar-cart-item .body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0 2rem 1.5rem 2rem; }
+    .sidebar-cart-item .body .content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: nowrap;
+          -ms-flex: nowrap;
+              flex: nowrap; }
+      .sidebar-cart-item .body .content .img {
+        margin-right: 1rem; }
+        @media (min-width: 768px) {
+          .sidebar-cart-item .body .content .img {
+            width: 120px; } }
+        .sidebar-cart-item .body .content .img img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .sidebar-cart-item .body .content .title {
+        font-weight: 700;
+        margin-bottom: 0.25rem; }
+      .sidebar-cart-item .body .content .dete {
+        font-weight: 500;
+        margin-bottom: 0.25rem; }
+      .sidebar-cart-item .body .content .price {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-top: 0.875rem; }
+    .sidebar-cart-item .body .function {
+      width: 25%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .sidebar-cart-item .body .function a {
+        display: inline-block;
+        color: #000;
+        padding: 0.75rem; }
+        .sidebar-cart-item .body .function a:hover {
+          color: #630834 !important; }
+      .sidebar-cart-item .body .function p {
+        margin-bottom: 0;
+        display: inline-block;
+        font-weight: 700; }
+
 header {
   z-index: 1045; }
 
@@ -11430,6 +11496,18 @@ header {
   .nav-top .cart-number {
     width: 22px;
     height: 18px; }
+
+.offcanvas {
+  margin-top: 61px; }
+  @media (min-width: 768px) {
+    .offcanvas {
+      margin-top: 81px; } }
+
+.offcanvas-end {
+  width: 500px; }
+
+.offcanvas-backdrop {
+  background: rgba(0, 0, 0, 0); }
 
 .nav-main {
   left: 0;
