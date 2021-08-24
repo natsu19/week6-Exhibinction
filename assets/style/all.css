@@ -11296,6 +11296,18 @@ dl {
     -webkit-box-shadow: 0 1px 0 0 #e31277;
             box-shadow: 0 1px 0 0 #e31277; }
 
+.hover_opacity {
+  display: inline-block;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  opacity: 100%; }
+  .hover_opacity:hover, .hover_opacity:focus, .hover_opacity:active {
+    opacity: 95%;
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98); }
+
 .card-img-2div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11472,13 +11484,28 @@ header {
   background-position: center;
   background-image: url(../images/people2.png); }
 
+.recommendation-Swiper h3, .recommendation-Swiper .h3 {
+  font-size: 1.25rem;
+  font-weight: 700; }
+
+.recommendation-Swiper a {
+  color: #000; }
+  .recommendation-Swiper a:hover {
+    color: #630834 !important; }
+
 .recommendation-Swiper .swiper-container {
   width: 100%;
   height: 100%; }
+  @media (min-width: 992px) {
+    .recommendation-Swiper .swiper-container {
+      width: 92%; } }
+
+.recommendation-Swiper .swiper-slide {
+  min-width: 350px; }
 
 .recommendation-Swiper .swiper-img {
   display: block;
-  width: 350px;
+  width: 100%;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover; }

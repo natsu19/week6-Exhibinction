@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>EXHIBINECTION ｜ 展覽</title>
+    <title>EXHIBINECTION ｜ 展覽 - 首頁</title>
     <link rel="stylesheet" href="assets/style/all.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -16,19 +16,19 @@
     <!-- header -->
     <header class="position-fixed w-100 bg-white border-bottom border-1 border-gray">
     <h1 class="position-absolute top-50 start-50 translate-middle">
-        <a href="index.html" title="回首頁" class="d-block p-5 text-primary" aria-label="回首頁" tabindex=”0”>EXHIBINECTION</a>
+        <a href="index.html" title="logo-回首頁" class="d-block p-5 text-primary" aria-label="logo-回首頁" tabindex=”0”>EXHIBINECTION</a>
     </h1>
     <nav class="container d-flex justify-content-end" aria-label="上方功能列" >
         <ul class="d-flex align-items-center nav-top">
             <li class="d-none d-md-block">
-                <button type="button" class="btn link_nav" aria-label="登入" href="#">Sign in</button>
+                <button type="button" class="btn link_nav" title="登入會員" aria-label="登入會員" href="#">Sign in</button>
             </li>
             <li class="d-none d-md-block">
-                <button type="button" class="btn link_nav"  aria-label="註冊" href="#">Sign up</button>
+                <button type="button" class="btn link_nav" title="註冊會員" aria-label="註冊會員" href="#">Sign up</button>
             </li>
             <li>
-                <button type="button" class="btn link_nav position-relative" aria-label="票券購物車" href="#" data-bs-toggle="cart modal"
-            data-bs-target="#Modal-cart">
+                <button type="button" class="btn link_nav position-relative" aria-label="票券購物車" href="#" data-bs-toggle="offcanvas cart"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <span class="material-icons">
                     confirmation_number
                     </span>
@@ -37,6 +37,40 @@
                     3
                     </span>
                 </button>
+
+                <!-- 購物車 -->
+                
+
+
+<div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Cart List</h5>
+    
+  </div>
+  <div class="offcanvas-body">
+    <section class="sidebar-cart-item">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="row">
+            <div class="col-md-4"><img src="" alt=""></div>
+            <div class="body col-md-4">
+                <ul>
+                    <li>2020 台味設計展</li>
+                    <li>01 JUN — 31 OCT</li>
+                    <li>全票</li>
+                    <li>NT$350</li>
+                </ul>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+
+    </section>
+  </div>
+</div>
+
+
+                
+
+
             </li>
         </ul>
     </nav>
@@ -67,40 +101,7 @@
     </section>
 
     <!-- nav -->
-    <!-- <nav class="nav-main poposition-sticky bg-white border-bottom border-1 border-gray d-none d-lg-block">
-    <div class="container">
-        <ul class="ms-auto me-auto col-9 row justify-content-between py-2">
-            <li class="col">
-                <a href="#" title="連結至音樂" aria-label="連結至音樂" class="lh-lg nav-link">音樂</a>
-            </li>
-            <li class="col">
-                <a href="#" title="連結至戲劇" aria-label="連結至戲劇" class="lh-lg nav-link">戲劇</a>
-            </li>
-            <li class="col">
-                <a href="design.html" title="連結至設計" aria-label="連結至設計" class="lh-lg nav-link">設計</a>
-            </li>
-            <li class="col">
-                <a href="#" title="連結至藝術" aria-label="連結至藝術" class="lh-lg nav-link">藝術</a>
-            </li>
-            <li class="col">
-                <a href="#" title="連結至美食" aria-label="連結至美食" class="lh-lg nav-link">美食</a>
-            </li>
-            <li class="col">
-                <a href="#" title="連結至旅遊" aria-label="連結至旅遊" class="lh-lg nav-link">旅遊</a>
-            </li>
-            <li class="col">
-                <a href="#" title="連結至電影" aria-label="連結至電影" class="lh-lg nav-link">電影</a>
-            </li>
-            <li class="col">
-                <a href="#" title="連結至親子" aria-label="連結至親子" class="lh-lg nav-link">親子</a>
-            </li>
-            <li class="col">
-                <a href="#" title="連結至期間限定" aria-label="連結至期間限定" class="lh-lg nav-link">期間限定</a>
-            </li>
-        </ul>
-    </div>
-</nav> -->
-<nav class="nav-main position-sticky bg-white border-bottom border-1 border-dark">
+    <nav class="nav-main position-sticky bg-white border-bottom border-1 border-dark">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-9 mx-auto">
@@ -143,15 +144,19 @@
     
     <!-- main -->
     <main>
-    <!--熱門特展-->
+    <!-----------
+        熱門特展
+    ------------->
     <section class="container mt-5 mt-md-15 g-0 g-lg-2">
         <h2 class="fs-1 mb-6 ms-3 ms-lg-0 fw-bold">熱門特展</h2>
         <!--#1-->
-        <div class="card-img-2div g-0">
+        <div class="card-img-2div g-0 hover_opacity">
             <!-- 圖片 -->
             <div class="col-md-4 col-12 img">
-                <div class="ratio ratio-1x1 ">
-                    <img class="img" src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="">
+                <div class="ratio ratio-1x1">
+                    <a href="#" aria-label="展覽內容" title="了解展覽內容">
+                        <img class="img" src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="2020 台味設計展">
+                    </a>
                 </div>
             </div>
             <!-- 內容 -->
@@ -191,11 +196,13 @@
             </div>
         </div>
         <!--#2-->
-        <div class="card-img-2div g-0">
+        <div class="card-img-2div g-0 hover_opacity">
             <!-- 圖片 -->
             <div class="col-md-4 col-12 img">
                 <div class="ratio ratio-1x1 ">
-                    <img class="img" src="assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="">
+                    <a href="#" aria-label="展覽內容" title="了解展覽內容">
+                        <img class="img" src="assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="No.22 線上設計展">
+                    </a>
                 </div>
             </div>
             <!-- 內容 -->
@@ -235,11 +242,13 @@
             </div>
         </div>
         <!--#3-->
-        <div class="card-img-2div g-0 g-lg-2">
+        <div class="card-img-2div g-0 g-lg-2 hover_opacity">
             <!-- 圖片 -->
             <div class="col-md-4 col-12 img">
                 <div class="ratio ratio-1x1 ">
-                    <img class="img" src="assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="">
+                    <a href="#" aria-label="展覽內容" title="了解展覽內容">
+                        <img class="img" src="assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="高雄設計節">
+                    </a>
                 </div>
             </div>
             <!-- 內容 -->
@@ -279,7 +288,11 @@
             </div>
         </div>
     </section>
-    <!--直播回顧-->
+
+
+    <!-----------
+        直播回顧
+    ------------->
     <section class="container g-2 mt-5 mt-md-15">
         
             <h2 class="fs-1 mb-6 fw-bold">直播回顧</h2>
@@ -304,92 +317,65 @@
             
         </div>
     </section>
+</main>
 
-    <!--猜你也喜歡-->
-    <section class="container g-2 mt-5 mt-md-15 ">
+    <!-- 猜你喜歡 -->
+        
+    <section class="container g-2 mt-5 mt-md-15">
         <h2 class="fs-1 mb-6 fw-bold">猜你也喜歡...</h2>
         <!-- swiper -->
         <div class="row">
-            <div class="col-12 col-md-9 mx-auto">
+            <div class="col-12 col-md-11 ms-auto">
                 <div class="swiper-container recommendation-Swiper">
-                    <div class="swiper-wrapper d-flex">
-                        <div class="swiper-slide">
-                            <a href="#" title="連結至音樂" aria-label="連結至音樂">音樂</a>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hover_opacity">
+                            <a href="#" aria-label="展覽詳細">
+                                <img class="swiper-img mb-1" src="assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt="No.22 線上設計展">
+                                <h3 class="mb-1">No.22 線上設計展</h3>
+                                <p class="mb-0">$350</p>
+                            </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="#" title="連結至戲劇" aria-label="連結至戲劇">戲劇</a>
+                        <div class="swiper-slide hover_opacity">
+                            <a href="#" aria-label="展覽詳細">
+                                <img class="swiper-img mb-1" src="assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" alt="No.22 線上設計展">
+                                <h3 class="mb-1">No.22 線上設計展</h3>
+                                <p class="mb-0">$350</p>
+                            </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="design.html" title="連結至設計" aria-label="連結至設計">設計</a>
+                        <div class="swiper-slide hover_opacity">
+                            <a href="#" aria-label="展覽詳細">
+                                <img class="swiper-img mb-1" src="assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg" alt="No.22 線上設計展">
+                                <h3 class="mb-1">No.22 線上設計展</h3>
+                                <p class="mb-0">$350</p>
+                            </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="#" title="連結至藝術" aria-label="連結至藝術">藝術</a>
+                        <div class="swiper-slide hover_opacity">
+                            <a href="#" aria-label="展覽詳細">
+                                <img class="swiper-img mb-1" src="assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt="No.22 線上設計展">
+                                <h3 class="mb-1">No.22 線上設計展</h3>
+                                <p class="mb-0">$350</p>
+                            </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="#" title="連結至美食" aria-label="連結至美食">美食</a>
+                        <div class="swiper-slide hover_opacity">
+                            <a href="#" aria-label="展覽詳細">
+                                <img class="swiper-img mb-1" src="assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" alt="No.22 線上設計展">
+                                <h3 class="mb-1">No.22 線上設計展</h3>
+                                <p class="mb-0">$350</p>
+                            </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="#" title="連結至旅遊" aria-label="連結至旅遊">旅遊</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" title="連結至電影" aria-label="連結至電影">電影</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" title="連結至親子" aria-label="連結至親子">親子</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" title="連結至期間限定" aria-label="連結至期間限定">期間限定</a>
+                        <div class="swiper-slide hover_opacity">
+                            <a href="#" aria-label="展覽詳細">
+                                <img class="swiper-img mb-1" src="assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg" alt="No.22 線上設計展">
+                                <h3 class="mb-1">No.22 線上設計展</h3>
+                                <p class="mb-0">$350</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="col-12 col-md-11 mx-auto">
-                <div class="swiper-container mySwiper2">
-                    <div class="swiper-wrapper mb-12 fs-4">
-                        <div class="swiper-slide">
-                            <img class="swiper-img mb-1" src="assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt="">
-                            <div class="card-body p-0">
-                                <h3 class="fw-bold mb-1">No.22 線上設計展</h3>
-                                <p class="mb-0">$350</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-img mb-1" src="assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-img mb-1" src="assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-img mb-1" src="assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-img mb-1" src="assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
-
-    <script>
-      var swiper = new Swiper(".recommendation-Swiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        breakpoints: {
-          768: {
-            slidesPerView: 6,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 9,
-            spaceBetween: 20,
-          },
-        },
-      });
-    </script>
-</main>
-
     <!-- footer -->
     <section class="subscription mt-15">
   <div class="container h-100 pb-9">
@@ -414,7 +400,7 @@
     <div class="row justify-content-between">
       <div class="col-12 col-md-8 d-flex flex-wrap flex-md-nowrap">
         <div class="me-4">
-          <a href="index.html" class="fs-3 link-black ">EXHIBINECTION</a>
+          <a href="index.html" title="logo-回首頁" aria-label="logo 回首頁" class="fs-3 link-black">EXHIBINECTION</a>
         </div>
         
         <p class="text-black mb-0 lh-lg">© 2020. All Rights Reserved.</p>
@@ -422,10 +408,10 @@
       <nav class="d-md-block d-none col-md-4 text-end" aria-label="下方功能列"> 
         <ul >
           <li class="d-inline-block me-6">
-            <a href="#" class="link_nav">Sign in</a>
+            <a href="#" class="link_nav" title="登入會員" aria-label="登入會員">Sign in</a>
           </li>
           <li class="d-inline-block">
-            <a href="#" class="link_nav">Sign up</a>
+            <a href="#" class="link_nav" title="註冊會員" aria-label="註冊會員">Sign up</a>
           </li>
         </ul>
       </nav>
@@ -435,11 +421,14 @@
 </footer>
 
     <!-- JS -->
+    <!--bs5-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
+    <!-- main nav Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
@@ -456,9 +445,21 @@
         },
       });
     </script>
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- 猜你喜歡 Swiper-->
+    <script>
+      var swiper = new Swiper(".recommendation-Swiper", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      });
+    </script> 
+
+    <!--Offcanvas-->
+    <script>
+    var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+    var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
+      return new bootstrap.Offcanvas(offcanvasEl)
+    })
+    </script>
        
   </body>
   
