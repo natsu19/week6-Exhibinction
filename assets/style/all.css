@@ -11512,6 +11512,9 @@ body {
   position: relative;
   color: #000; }
 
+header {
+  z-index: 1045; }
+
 img {
   max-width: 100%;
   height: auto;
@@ -11809,9 +11812,6 @@ dl {
         display: inline-block;
         font-weight: 700;
         font-size: 1.25rem; }
-
-header {
-  z-index: 1045; }
 
 .nav-top {
   height: 3.75rem; }
