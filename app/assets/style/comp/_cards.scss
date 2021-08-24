@@ -1,64 +1,104 @@
 
-//首頁展覽
+//首頁-熱門特展
 .card-img-2div{
     display: flex;
-    justify-content: space-between;
     margin-bottom: $spacer*4;
     background: $light;
-
+    padding: $spacer * 4;
+    flex-wrap: wrap;
     @include media-breakpoint-up(md){
         margin-bottom: $spacer*5;
-        display: flex;
+        padding: 0;
+        flex-wrap: nowrap;
     }
-
-
     ul{
         padding-left: 0;
     }
-
+    //比例
     .ratio{
         @include media-breakpoint-up(md){
             height: 100%;
         }
     }
-    .img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 
-    .card-body{
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        padding: $spacer * 2 $spacer * 4 $spacer * 6;
+    //圖片
+    .img {
+        @include media-breakpoint-up(md){
+            max-width: 350px;
+        }
+        img{
+            @include img-cover(100%,100%);
+        }
+    }
+    
+    
+
+    //主要內容
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: $spacer * 2 0 $spacer * 6;
         font-size: $h4-font-size;
 
         @include media-breakpoint-up(md){
-            padding: $spacer * 10 $spacer * 6;
+            padding: $spacer * 10 0 $spacer * 10 $spacer * 6;
         }
-        // .title{
-        //     font-weight: $font-weight-bold;
-        // }
-        // .price{
-        //     margin-bottom: $spacer * 2;
-        // }
+        //標題
+        .title{
+            margin-bottom: $spacer;
+            display: flex;
+            h4{
+                font-weight: $font-weight-bold !important;
+                display: inline;
+            }
+            //[mobile only] 分享連結
+            a{
+                @include link-default;
+                @include media-breakpoint-up(md){
+                    display: none;
+                }
 
-        // .content{
-        //     font-weight: $font-weight-medium;
-        //     font-size: $font-size-base;
-        //     margin-bottom: $spacer * 5;
-        //     @include media-breakpoint-up(lg){
-        //         font-size: $h4-font-size;
-        //     }
-        // }
+            }
+            //[mobile only] 日期
+            p{
+                text-align: right;
+                padding-bottom: 0;
+                font-size: 1rem;
+                font-weight: $font-weight-medium;
+                @include media-breakpoint-up(md){
+                    display: none;
+                }
+            }
+        }
+        //價格
+        .price{
+            margin-bottom: $spacer * 2;
+        }
+        //內文介紹
+        .content{
+            font-weight: $font-weight-medium;
+            font-size: $font-size-base;
+            margin-bottom: $spacer * 5;
+            @include media-breakpoint-up(lg){
+                font-size: $h4-font-size;
+            }
+        }
+        .btn{
+            margin-right: $spacer * 2;
+            padding: $spacer * 2.5 $spacer * 4;
+        }
     }
 
+    // [md 以上顯示] 日期
     .date{
         display: flex;
         justify-content: end;
-        padding:$spacer * 10 $spacer * 6;
-        
+        padding:$spacer * 10 0 $spacer * 10 $spacer * 6;
+        display: none;
+        @include media-breakpoint-up(md){
+            display: block;
+        }
 
         &-body{
             height: 100%;
@@ -66,13 +106,95 @@
             flex-direction: column;
             justify-content: space-between;
             font-weight: $font-weight-bold;
+            padding: 0;
 
-            a{
-                color: $black;
-                &:hover{
-                    color: $primary;
-                }
+            // [md 以上顯示] 分享連結
+            a{ 
+                @include link-default; 
+                font-size: $h4-font-size;
             }
         }
+    }
+}
+
+//側邊購物車品項
+.sidebar-cart-item{
+    background: $white;
+    margin-bottom: $spacer * 2;
+    margin-right: $spacer * 3;
+    border-radius: 0.25rem;
+    @include media-breakpoint-up(md){
+        margin-bottom: $spacer * 3;
+    }
+    
+    .btn-close{
+        background-image: none;
+        padding: $spacer;
+        @include link-default;
+        opacity: 1;
+    };
+    .body{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0 $spacer * 4 $spacer * 4;
+        @include media-breakpoint-up(md){
+            padding: 0 $spacer * 8 $spacer * 6 $spacer * 8; //0 32 24 32
+        }
+
+        .content{
+            display: flex;
+            flex: nowrap;
+
+            //圖片
+            .img {
+                margin-right: $spacer * 4;
+                width: 120px;
+                img{
+                    @include img-cover(100%,100%);
+                }
+            }
+
+            .title{
+                font-weight: $font-weight-bold;
+                margin-bottom: $spacer;
+            }
+    
+            .dete{
+                font-weight: $font-weight-medium;
+                margin-bottom: $spacer;
+            }
+            
+            .price{
+                font-size: $h4-font-size; //20
+                font-weight: $font-weight-bold;
+                margin-top: $spacer * 3.5;
+            }
+        }
+
+        .function{
+            width: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            @include media-breakpoint-up(md){
+                width: 25%;
+                flex-wrap: nowrap;
+            }
+
+            a{
+                display: inline-block;
+                @include link-default;
+                padding: $spacer * 3;
+            }
+            p{
+                margin-bottom: 0;
+                display: inline-block;
+                font-weight: $font-weight-bold;
+                font-size: $h4-font-size;
+            }
+
+        }
+        
     }
 }

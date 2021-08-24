@@ -8,10 +8,23 @@
 .link-default{
     color: $black;
     &:hover{
-        color: $primary;
+        color: $primary !important;
     }
 }
 
 .hover_underline{
     @include hover_underline ($dark,$secondary,$primary){}
 }
+
+.hover_opacity{
+    display: inline-block;
+    transition: all 0.25s ease-in-out;
+    opacity: 100%;
+
+    &:hover,&:focus,&:active {
+        opacity: 95%;
+        transform: scale(0.98);
+    }
+
+}
+

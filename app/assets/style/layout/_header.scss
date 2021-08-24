@@ -1,15 +1,65 @@
 header{
-    z-index: $zindex-sticky;
+    z-index: $zindex-offcanvas;
 }
 .nav-top{
     height: 3.75rem;
     @include media-breakpoint-up(md){
         height: 5rem;
     }
-
-
     .cart-number{
         width: 22px;
         height: 18px;
     }
+}
+
+.offcanvas{
+    margin-top: 61px;
+    @include media-breakpoint-up(md){
+        margin-top: 81px
+    }
+    .btn-white{
+        color: $primary;
+        &:hover{
+            background: $primary;
+            color: $white;
+            border-color: $primary;
+        }
+    }
+}
+
+.offcanvas-header{
+    .user{
+        @include img-cover(32px , 32px);
+    }
+    .btn{
+        padding: $spacer;
+        color: $white;
+        &:hover{
+            color: $secondary;
+        }
+    }
+}
+
+.offcanvas-end{
+    width: 540px;
+}
+.offcanvas-backdrop{
+    background: rgba($black , 0%);
+}
+
+/*-- 購物車scrollbar--*/
+.offcanvas-body{
+    //chrome safari
+    &::-webkit-scrollbar {
+        width: 0.125rem;
+    }
+    &::-webkit-scrollbar-track {
+    background-color: $white;
+    }
+    &::-webkit-scrollbar-thumb {
+    background-color: $secondary;
+    }
+    // firefox
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: $secondary $black;   /* scroll thumb and track */
 }

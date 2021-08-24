@@ -445,9 +445,23 @@ $utilities: map-merge(
       values: (monospace: var(--#{$variable-prefix}font-monospace))
     ),
     "font-size": (
-      rfs: true,
+      rfs: false,//true,
       property: font-size,
       class: fs,
+      values: $font-sizes
+    ),
+    //自訂新增
+    "font-size-md": (
+      rfs: false,//true,
+      property: font-size,
+      class: fs-md,
+      values: $font-sizes
+    ),
+    //自訂新增
+    "font-size-lg": (
+      rfs: false,//true,
+      property: font-size,
+      class: fs-lg,
       values: $font-sizes
     ),
     "font-style": (
@@ -561,6 +575,7 @@ $utilities: map-merge(
         25: .25,
         50: .5,
         75: .75,
+        80: .80, //new
         100: 1
       )
     ),

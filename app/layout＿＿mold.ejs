@@ -15,46 +15,17 @@
   <body>
     <!-- header -->
     <%- include('_header.ejs') %>
-
-    <!-- banner -->
-    <section class="pt-md-20 pt-15">
-      <div class="banner">
-        <div class="container h-100 pb-20 pb-md-0">
-          <div class="h-100 row justify-content-center align-items-end align-items-md-center">
-            <ul class="col-12 col-md-10 text-white">
-              <li>
-                <h2 class="fs-1 mb-2">台北當代藝術展</h2>
-              </li>
-              <li class="fs-4 mb-4">01 JUN - 31 OCT</li>
-              <li class="row g-2 g-md-1">
-                  <div class="col col-md-4 col-lg-2 ">
-                    <a href="#" class="btn btn-secondary w-100 lh-lg" aria-label="票券購買">購買票券</a>
-                  </div>
-                  <div class="col col-md-4 col-lg-2">
-                    <a href="#" class="btn btn-outline-white w-100 lh-lg" aria-label="展覽詳細內容">詳細資訊</a>
-                  </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- nav -->
     <%- include('_nav.ejs') %>
     
     <!-- main -->
     <%- contents %>
-
     <!-- 猜你喜歡 -->
     <%- include('_recommendation.ejs') %>
     <!-- footer -->
     <%- include('_footer.ejs') %>
 
     <!-- JS -->
-    <!--bs5-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <!-- Swiper JS -->
@@ -81,6 +52,7 @@
       var swiper = new Swiper(".recommendation-Swiper", {
         slidesPerView: 3,
         spaceBetween: 24,
+        
       });
     </script> 
        

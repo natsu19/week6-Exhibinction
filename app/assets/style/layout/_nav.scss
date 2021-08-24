@@ -6,18 +6,18 @@
     @include media-breakpoint-up(md){
         top: 5rem;
     }
-}
-.swiper-container {
-    width: 100%;
-    height: 100%;  
-  }
-.swiper-slide{
-    text-align: center;
-    padding-top: $spacer * 3.5;
-    margin-bottom: $spacer * 3.5;
-    a{
-        @include hover_underline ($dark,$secondary,$dark){
-            width: 100%;           
+    .swiper-container {
+        width: 100%;
+        height: 100%;  
+      }
+    .swiper-slide{
+        text-align: center;
+        padding-top: $spacer * 3.5;
+        margin-bottom: $spacer * 3.5;
+        a{
+            @include hover_underline ($dark,$secondary,$dark){
+                width: 100%;           
+            }
         }
     }
 }

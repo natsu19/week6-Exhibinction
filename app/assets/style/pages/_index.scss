@@ -1,5 +1,40 @@
 .banner{
   @include bg-cover(100% , 480px , center){
-  background-image: url(../images/index_banner.jpg);
+    background-image: url(../images/index_banner.jpg);
+    background-attachment: fixed;
+  }
+}
+
+.live-bg{
+  @include bg-cover(100% , 100% , center){
+    background-image: url(../images/people2.png);
+  }
+}
+
+
+.recommendation-Swiper{
+  h3{
+    font-size: $h4-font-size;
+    font-weight: $font-weight-bold;
+  }
+  a{
+    @include link-default;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    @include media-breakpoint-up(lg){
+      width: 92%
+    }
+  }
+
+  .swiper-slide{
+    min-width: 350px;
+  }
+
+  .swiper-img{
+    display: block;
+    @include img-cover(100% , 350px);
+
   }
 }
