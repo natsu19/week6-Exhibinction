@@ -40,43 +40,40 @@
       </div>
     </section>
 
-
     <!-- nav -->
     <%- include('_nav.ejs') %>
     
-
+    <!-- main -->
     <%- contents %>
 
+    <!-- footer -->
     <%- include('_footer.ejs') %>
 
+    <!-- JS -->
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {});
- 
-      var mySwiper = new Swiper('.swiper-container',{
-  
-      breakpoints: { 
-        320: {  //当屏幕宽度大于等于320
-          slidesPerView: 5,
-          slidesPerGroup: 2
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        breakpoints: {
+          768: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 9,
+            spaceBetween: 20,
+          },
         },
-        768: {  //当屏幕宽度大于等于768 
-          slidesPerView: 6,
-          slidesPerGroup: 3
-        },
-        1280: {  //当屏幕宽度大于等于1280
-          slidesPerView: 9,
-          slidesPerGroup: 0
-        },
-      }
-    })
-    
+      });
     </script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
        
   </body>
   

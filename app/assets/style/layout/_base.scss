@@ -5,17 +5,15 @@
 
 body{
     font-family: 'Lato','roboto','Noto Sans', 'Microsoft JhengHei',sans-serif;
-    line-height: $line-height-base;
+    line-height: $line-height-base !important;
+    position: relative;
+    color: $black;
 }
 
 img{
     max-width: 100%;
     height: auto;
 	vertical-align: middle !important;
-}
-
-a{
-	text-decoration: none;
 }
 
 h1,h2,h3,h4,h5,h6{

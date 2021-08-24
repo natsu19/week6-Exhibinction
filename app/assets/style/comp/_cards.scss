@@ -1,0 +1,78 @@
+
+//首頁展覽
+.card-img-2div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacer*4;
+    background: $light;
+
+    @include media-breakpoint-up(md){
+        margin-bottom: $spacer*5;
+        display: flex;
+    }
+
+
+    ul{
+        padding-left: 0;
+    }
+
+    .ratio{
+        @include media-breakpoint-up(md){
+            height: 100%;
+        }
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-body{
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        padding: $spacer * 2 $spacer * 4 $spacer * 6;
+        font-size: $h4-font-size;
+
+        @include media-breakpoint-up(md){
+            padding: $spacer * 10 $spacer * 6;
+        }
+        // .title{
+        //     font-weight: $font-weight-bold;
+        // }
+        // .price{
+        //     margin-bottom: $spacer * 2;
+        // }
+
+        // .content{
+        //     font-weight: $font-weight-medium;
+        //     font-size: $font-size-base;
+        //     margin-bottom: $spacer * 5;
+        //     @include media-breakpoint-up(lg){
+        //         font-size: $h4-font-size;
+        //     }
+        // }
+    }
+
+    .date{
+        display: flex;
+        justify-content: end;
+        padding:$spacer * 10 $spacer * 6;
+        
+
+        &-body{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-weight: $font-weight-bold;
+
+            a{
+                color: $black;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

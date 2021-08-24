@@ -2,8 +2,11 @@
 
 @import "layout/_base";
 @import "helpers/_mixin";
+@import "helpers/_links";
+@import "comp/_cards";
 
 @import "layout/_header";
 @import "layout/_nav";
+@import "layout/_footer";
 
 @import "pages/_index";

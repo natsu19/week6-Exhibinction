@@ -1,0 +1,6 @@
+.subscription {
+    @include bg-cover(100% , 400px , center){
+    background-image: url(../images/footer_bg.jpg);
+    }
+
+}

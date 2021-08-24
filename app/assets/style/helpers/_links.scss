@@ -1,0 +1,17 @@
+.link_nav{
+    color: $dark;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.link-default{
+    color: $black;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.hover_underline{
+    @include hover_underline ($dark,$secondary,$primary){}
+}
