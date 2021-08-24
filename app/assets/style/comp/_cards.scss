@@ -3,7 +3,6 @@
 .card-img-2div{
     display: flex;
     margin-bottom: $spacer*4;
-    background: $light;
     padding: $spacer * 4;
     flex-wrap: wrap;
     @include media-breakpoint-up(md){
@@ -28,6 +27,12 @@
         }
         img{
             @include img-cover(100%,100%);
+        }
+    }
+
+    .design-img{
+        @include media-breakpoint-up(md){
+            max-width: 100%;
         }
     }
     

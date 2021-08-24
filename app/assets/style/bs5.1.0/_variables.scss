@@ -396,6 +396,7 @@ $spacers: (
   8: $spacer * 8,   //32
   9: $spacer * 9,   //36
   10: $spacer * 10, //40
+  11: $spacer * 11, //44
   12: $spacer * 12, //48
   13: $spacer * 13, //52
   15: $spacer * 15, //60
@@ -625,6 +626,7 @@ $h3-font-size:                $font-size-base * 1.5 !default;   // 1.75
 $h4-font-size:                $font-size-base * 1.25 !default;  // 1.5
 $h5-font-size:                $font-size-base !default;         // 1.25
 $h6-font-size:                $font-size-base * 0.75 !default;  // 1
+$h7-font-size:                $font-size-base * 2.25 !default;  // new
 
 
 // scss-docs-end font-variables
@@ -637,6 +639,7 @@ $font-sizes: (
   4: $h4-font-size,    // 20
   5: $h5-font-size,    // 16
   6: $h6-font-size,    // 12
+  7: $h7-font-size,    // 36
 ) !default;
 // scss-docs-end font-sizes
 

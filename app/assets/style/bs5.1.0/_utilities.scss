@@ -450,20 +450,6 @@ $utilities: map-merge(
       class: fs,
       values: $font-sizes
     ),
-    //自訂新增
-    "font-size-md": (
-      rfs: false,//true,
-      property: font-size,
-      class: fs-md,
-      values: $font-sizes
-    ),
-    //自訂新增
-    "font-size-lg": (
-      rfs: false,//true,
-      property: font-size,
-      class: fs-lg,
-      values: $font-sizes
-    ),
     "font-style": (
       property: font-style,
       class: fst,

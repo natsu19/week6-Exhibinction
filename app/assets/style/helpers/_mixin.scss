@@ -34,3 +34,21 @@
     }
     @content;
 }
+
+
+@each $name, $color in $font-sizes {
+    //pad only
+    @include media-breakpoint-up(md){
+        // margin-pad
+        .fs-md-#{$name} { font-size: $color;}
+    }
+}
+
+@each $name, $color in $font-sizes {
+    //pad only
+    @include media-breakpoint-up(lg){
+        // margin-pad
+        .fs-lg-#{$name} { font-size: $color;}
+    }
+}
+
