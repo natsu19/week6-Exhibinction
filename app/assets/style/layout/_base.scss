@@ -9,6 +9,9 @@ body{
     position: relative;
     color: $black;
 }
+header{
+    z-index: $zindex-offcanvas;
+}
 
 img{
     max-width: 100%;
