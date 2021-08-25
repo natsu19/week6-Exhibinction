@@ -11991,10 +11991,41 @@ dl {
      object-fit: cover; }
 
 @media (min-width: 768px) {
-  .card-img-top {
+  .exhibinection .card-img-top, .exhibinection .ticket {
     width: 100%;
     height: 256px;
     -o-object-fit: cover;
        object-fit: cover; } }
+
+.exhibinection .ticket .btn-outline-secondary {
+  color: #000;
+  border-radius: 0;
+  border: 0; }
+  .exhibinection .ticket .btn-outline-secondary:hover {
+    color: #fff; }
+
+.exhibinection .ticket .btn-check:checked + .btn-outline-secondary {
+  background-color: rgba(227, 18, 119, 0) !important;
+  color: #000;
+  border-bottom: 1px solid #E31277; }
+  .exhibinection .ticket .btn-check:checked + .btn-outline-secondary:hover {
+    color: #000; }
+
+@media (min-width: 768px) {
+  .exhibinection .content div:first-of-type img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+
+@media (min-width: 768px) {
+  .exhibinection .content div:nth-of-type(2) img {
+    width: 100%;
+    height: 559px;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+
+.exhibinection .content p:first-of-type {
+  text-indent: 2rem; }
 
 /*# sourceMappingURL=all.css.map */
