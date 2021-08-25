@@ -630,3 +630,22 @@ $utilities: map-merge(
   ),
   $utilities
 );
+
+/*---以下新增----*/
+
+// 文字斷點
+// fs-md-* 
+@each $name, $color in $font-sizes {
+  @include media-breakpoint-up(md){
+      .fs-md-#{$name} { font-size: $color;}
+  };
+}
+
+// fs-lg-*
+@each $name, $color in $font-sizes {
+  @include media-breakpoint-up(lg){
+      .fs-lg-#{$name} { font-size: $color;}
+  };
+}
+
+

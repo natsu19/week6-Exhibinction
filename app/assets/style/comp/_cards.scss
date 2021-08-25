@@ -5,6 +5,7 @@
     margin-bottom: $spacer*4;
     padding: $spacer * 4;
     flex-wrap: wrap;
+    background: $light;
     @include media-breakpoint-up(md){
         margin-bottom: $spacer*5;
         padding: 0;
@@ -13,12 +14,7 @@
     ul{
         padding-left: 0;
     }
-    //比例
-    .ratio{
-        @include media-breakpoint-up(md){
-            height: 100%;
-        }
-    }
+    
 
     //圖片
     .img {
@@ -28,14 +24,42 @@
         img{
             @include img-cover(100%,100%);
         }
-    }
-
-    .design-img{
-        @include media-breakpoint-up(md){
-            max-width: 100%;
+        .ratio{
+            position: relative;
+            @include media-breakpoint-up(md){
+                height: 100%;
+            }
+            p{
+                position: absolute;
+                font-size: $h8-font-size;
+                font-weight: $font-weight-bold;
+                top: 40%;
+                text-align: center;
+                z-index: 10;
+                color: $white;
+                margin-bottom: 0;
+                transition: all 0.25s ease-in-out;
+                opacity: 0;
+            }
+            div{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba($black,0.3);
+                z-index: 9;
+                transition: all 0.25s ease-in-out;
+                opacity: 0;
+            }
+        }
+        &:hover{
+            p,div{
+                opacity: 1;
+            }
         }
     }
-    
+  
     
 
     //主要內容
@@ -157,6 +181,7 @@
                 img{
                     @include img-cover(100%,100%);
                 }
+                
             }
 
             .title{

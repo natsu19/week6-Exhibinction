@@ -1,0 +1,50 @@
+.exhibinection{
+    .card-img-top ,.ticket{
+        @include media-breakpoint-up(md){
+            @include img-height-fixed(256px)
+        }
+    }
+
+    .ticket{
+        .btn-outline-secondary{
+            color: $black;
+            border-radius: 0;
+            border: 0;
+            &:hover{
+                color: $white;
+            }
+        }
+
+        .btn-check:checked + .btn-outline-secondary{
+            background-color: rgba( $secondary , 0 ) !important;
+            color: $black;
+            border-bottom: 1px solid $secondary;
+            &:hover{
+                color: $black;
+
+            }
+        }
+    }
+
+    .content{
+        
+        & div:first-of-type img {
+            @include media-breakpoint-up(md){
+                @include img-height-fixed(400px)
+            }
+        }
+
+        
+
+        & div:nth-of-type(2) img {
+            @include media-breakpoint-up(md){
+                @include img-height-fixed(559px)
+            }
+        }
+
+        & p:first-of-type{
+            text-indent:2rem;
+        }
+        
+    }
+}
