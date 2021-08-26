@@ -8,71 +8,6 @@
 @import url("https://pro.fontawesome.com/releases/v5.15.3/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
-/*---以下新增----*/
-@media (min-width: 768px) {
-  .fs-md-1 {
-    font-size: 2rem; } }
-
-@media (min-width: 768px) {
-  .fs-md-2 {
-    font-size: 1.75rem; } }
-
-@media (min-width: 768px) {
-  .fs-md-3 {
-    font-size: 1.5rem; } }
-
-@media (min-width: 768px) {
-  .fs-md-4 {
-    font-size: 1.25rem; } }
-
-@media (min-width: 768px) {
-  .fs-md-5 {
-    font-size: 1rem; } }
-
-@media (min-width: 768px) {
-  .fs-md-6 {
-    font-size: 0.75rem; } }
-
-@media (min-width: 768px) {
-  .fs-md-7 {
-    font-size: 2.25rem; } }
-
-@media (min-width: 768px) {
-  .fs-md-8 {
-    font-size: 2.5rem; } }
-
-@media (min-width: 992px) {
-  .fs-lg-1 {
-    font-size: 2rem; } }
-
-@media (min-width: 992px) {
-  .fs-lg-2 {
-    font-size: 1.75rem; } }
-
-@media (min-width: 992px) {
-  .fs-lg-3 {
-    font-size: 1.5rem; } }
-
-@media (min-width: 992px) {
-  .fs-lg-4 {
-    font-size: 1.25rem; } }
-
-@media (min-width: 992px) {
-  .fs-lg-5 {
-    font-size: 1rem; } }
-
-@media (min-width: 992px) {
-  .fs-lg-6 {
-    font-size: 0.75rem; } }
-
-@media (min-width: 992px) {
-  .fs-lg-7 {
-    font-size: 2.25rem; } }
-
-@media (min-width: 992px) {
-  .fs-lg-8 {
-    font-size: 2.5rem; } }
-
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -7457,13 +7392,13 @@ textarea.form-control-lg {
   font-family: var(--bs-font-monospace) !important; }
 
 .fs-1 {
-  font-size: 2rem !important; }
+  font-size: calc(1.325rem + 0.9vw) !important; }
 
 .fs-2 {
-  font-size: 1.75rem !important; }
+  font-size: calc(1.3rem + 0.6vw) !important; }
 
 .fs-3 {
-  font-size: 1.5rem !important; }
+  font-size: calc(1.275rem + 0.3vw) !important; }
 
 .fs-4 {
   font-size: 1.25rem !important; }
@@ -7475,10 +7410,10 @@ textarea.form-control-lg {
   font-size: 0.75rem !important; }
 
 .fs-7 {
-  font-size: 2.25rem !important; }
+  font-size: calc(1.35rem + 1.2vw) !important; }
 
 .fs-8 {
-  font-size: 2.5rem !important; }
+  font-size: calc(1.375rem + 1.5vw) !important; }
 
 .fst-italic {
   font-style: italic !important; }
@@ -8512,6 +8447,22 @@ textarea.form-control-lg {
     padding-left: 3.75rem !important; }
   .ps-sm-20 {
     padding-left: 5rem !important; }
+  .fs-sm-1 {
+    font-size: calc(1.325rem + 0.9vw) !important; }
+  .fs-sm-2 {
+    font-size: calc(1.3rem + 0.6vw) !important; }
+  .fs-sm-3 {
+    font-size: calc(1.275rem + 0.3vw) !important; }
+  .fs-sm-4 {
+    font-size: 1.25rem !important; }
+  .fs-sm-5 {
+    font-size: 1rem !important; }
+  .fs-sm-6 {
+    font-size: 0.75rem !important; }
+  .fs-sm-7 {
+    font-size: calc(1.35rem + 1.2vw) !important; }
+  .fs-sm-8 {
+    font-size: calc(1.375rem + 1.5vw) !important; }
   .text-sm-start {
     text-align: left !important; }
   .text-sm-end {
@@ -9268,6 +9219,22 @@ textarea.form-control-lg {
     padding-left: 3.75rem !important; }
   .ps-md-20 {
     padding-left: 5rem !important; }
+  .fs-md-1 {
+    font-size: calc(1.325rem + 0.9vw) !important; }
+  .fs-md-2 {
+    font-size: calc(1.3rem + 0.6vw) !important; }
+  .fs-md-3 {
+    font-size: calc(1.275rem + 0.3vw) !important; }
+  .fs-md-4 {
+    font-size: 1.25rem !important; }
+  .fs-md-5 {
+    font-size: 1rem !important; }
+  .fs-md-6 {
+    font-size: 0.75rem !important; }
+  .fs-md-7 {
+    font-size: calc(1.35rem + 1.2vw) !important; }
+  .fs-md-8 {
+    font-size: calc(1.375rem + 1.5vw) !important; }
   .text-md-start {
     text-align: left !important; }
   .text-md-end {
@@ -10024,6 +9991,22 @@ textarea.form-control-lg {
     padding-left: 3.75rem !important; }
   .ps-lg-20 {
     padding-left: 5rem !important; }
+  .fs-lg-1 {
+    font-size: calc(1.325rem + 0.9vw) !important; }
+  .fs-lg-2 {
+    font-size: calc(1.3rem + 0.6vw) !important; }
+  .fs-lg-3 {
+    font-size: calc(1.275rem + 0.3vw) !important; }
+  .fs-lg-4 {
+    font-size: 1.25rem !important; }
+  .fs-lg-5 {
+    font-size: 1rem !important; }
+  .fs-lg-6 {
+    font-size: 0.75rem !important; }
+  .fs-lg-7 {
+    font-size: calc(1.35rem + 1.2vw) !important; }
+  .fs-lg-8 {
+    font-size: calc(1.375rem + 1.5vw) !important; }
   .text-lg-start {
     text-align: left !important; }
   .text-lg-end {
@@ -10780,6 +10763,22 @@ textarea.form-control-lg {
     padding-left: 3.75rem !important; }
   .ps-xl-20 {
     padding-left: 5rem !important; }
+  .fs-xl-1 {
+    font-size: calc(1.325rem + 0.9vw) !important; }
+  .fs-xl-2 {
+    font-size: calc(1.3rem + 0.6vw) !important; }
+  .fs-xl-3 {
+    font-size: calc(1.275rem + 0.3vw) !important; }
+  .fs-xl-4 {
+    font-size: 1.25rem !important; }
+  .fs-xl-5 {
+    font-size: 1rem !important; }
+  .fs-xl-6 {
+    font-size: 0.75rem !important; }
+  .fs-xl-7 {
+    font-size: calc(1.35rem + 1.2vw) !important; }
+  .fs-xl-8 {
+    font-size: calc(1.375rem + 1.5vw) !important; }
   .text-xl-start {
     text-align: left !important; }
   .text-xl-end {
@@ -11536,12 +11535,70 @@ textarea.form-control-lg {
     padding-left: 3.75rem !important; }
   .ps-xxl-20 {
     padding-left: 5rem !important; }
+  .fs-xxl-1 {
+    font-size: calc(1.325rem + 0.9vw) !important; }
+  .fs-xxl-2 {
+    font-size: calc(1.3rem + 0.6vw) !important; }
+  .fs-xxl-3 {
+    font-size: calc(1.275rem + 0.3vw) !important; }
+  .fs-xxl-4 {
+    font-size: 1.25rem !important; }
+  .fs-xxl-5 {
+    font-size: 1rem !important; }
+  .fs-xxl-6 {
+    font-size: 0.75rem !important; }
+  .fs-xxl-7 {
+    font-size: calc(1.35rem + 1.2vw) !important; }
+  .fs-xxl-8 {
+    font-size: calc(1.375rem + 1.5vw) !important; }
   .text-xxl-start {
     text-align: left !important; }
   .text-xxl-end {
     text-align: right !important; }
   .text-xxl-center {
     text-align: center !important; } }
+
+@media (min-width: 1200px) {
+  .fs-1 {
+    font-size: 2rem !important; }
+  .fs-2 {
+    font-size: 1.75rem !important; }
+  .fs-3 {
+    font-size: 1.5rem !important; }
+  .fs-7 {
+    font-size: 2.25rem !important; }
+  .fs-8 {
+    font-size: 2.5rem !important; }
+  .fs-sm-1 {
+    font-size: 2rem !important; }
+  .fs-sm-2 {
+    font-size: 1.75rem !important; }
+  .fs-sm-3 {
+    font-size: 1.5rem !important; }
+  .fs-sm-7 {
+    font-size: 2.25rem !important; }
+  .fs-sm-8 {
+    font-size: 2.5rem !important; }
+  .fs-md-1 {
+    font-size: 2rem !important; }
+  .fs-md-2 {
+    font-size: 1.75rem !important; }
+  .fs-md-3 {
+    font-size: 1.5rem !important; }
+  .fs-md-7 {
+    font-size: 2.25rem !important; }
+  .fs-md-8 {
+    font-size: 2.5rem !important; }
+  .fs-lg-1 {
+    font-size: 2rem !important; }
+  .fs-lg-2 {
+    font-size: 1.75rem !important; }
+  .fs-lg-3 {
+    font-size: 1.5rem !important; }
+  .fs-lg-7 {
+    font-size: 2.25rem !important; }
+  .fs-lg-8 {
+    font-size: 2.5rem !important; } }
 
 @media print {
   .d-print-inline {
@@ -11780,27 +11837,26 @@ dl {
   .btn-close:hover {
     color: #630834 !important; }
 
-.cart-item .body, .cart-item .content {
+.sidebar-cart .body, .sidebar-cart .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
 
-.cart-item .title {
+.sidebar-cart .title {
   font-weight: 700;
   margin-bottom: 0.25rem; }
 
-.cart-item .dete {
+.sidebar-cart .dete {
   font-weight: 500;
   margin-bottom: 0.25rem; }
 
-.cart-item .price {
+.sidebar-cart .price, .sidebar-cart .number {
   font-size: 1.25rem;
   font-weight: 700; }
 
-.cart-item .function {
-  width: 10%;
+.sidebar-cart .function {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11813,17 +11869,16 @@ dl {
       -ms-flex-align: center;
           align-items: center; }
   @media (min-width: 768px) {
-    .cart-item .function {
-      width: 25%;
+    .sidebar-cart .function {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
-  .cart-item .function a {
+  .sidebar-cart .function a {
     display: inline-block;
     color: #000 !important;
     padding: 0.75rem; }
-    .cart-item .function a:hover {
+    .sidebar-cart .function a:hover {
       color: #630834 !important; }
-  .cart-item .function p {
+  .sidebar-cart .function p {
     margin-bottom: 0;
     display: inline-block;
     font-weight: 700;
@@ -11850,39 +11905,123 @@ dl {
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
+  .sidebar-cart .cart-item .type {
+    color: #373A3C; }
   .sidebar-cart .cart-item .price {
     margin-top: 0.875rem; }
+  .sidebar-cart .cart-item .function {
+    width: 10%; }
+    @media (min-width: 768px) {
+      .sidebar-cart .cart-item .function {
+        width: 25%; } }
+
+.checkout-list .body, .checkout-list .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.checkout-list .title {
+  font-weight: 700;
+  margin-bottom: 0.25rem; }
+
+.checkout-list .dete {
+  font-weight: 500;
+  margin-bottom: 0.25rem; }
+
+.checkout-list .price, .checkout-list .number {
+  font-size: 1.25rem;
+  font-weight: 700; }
+
+.checkout-list .function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 768px) {
+    .checkout-list .function {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+  .checkout-list .function a {
+    display: inline-block;
+    color: #000 !important;
+    padding: 0.75rem; }
+    .checkout-list .function a:hover {
+      color: #630834 !important; }
+  .checkout-list .function p {
+    margin-bottom: 0;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.25rem; }
+
+.checkout-list p {
+  margin-bottom: 0; }
 
 .checkout-list .alert {
   padding: 0;
   border: 0;
   border-radius: 0; }
 
-.checkout-list .cart-item .body {
-  margin-left: -15px; }
-
-.checkout-list .cart-item .img {
-  width: 165px !important; }
-  @media (min-width: 768px) {
-    .checkout-list .cart-item .img {
-      width: 160px !important; } }
+.checkout-list .cart-item {
+  position: relative; }
+  @media (min-width: 992px) {
+    .checkout-list .cart-item {
+      margin-left: -15px; } }
   .checkout-list .cart-item .img img {
     width: 100%;
     height: 84px;
     -o-object-fit: cover;
        object-fit: cover; }
-
-.checkout-list .cart-item .price {
-  text-align: center; }
-  .checkout-list .cart-item .price p {
-    margin-bottom: 0; }
-
-.checkout-list .cart-item .checkout-card-footer {
-  position: relative; }
-  .checkout-list .cart-item .checkout-card-footer .btn-close {
+  .checkout-list .cart-item .price {
+    display: none; }
+    @media (min-width: 768px) {
+      .checkout-list .cart-item .price {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 100%; } }
+  .checkout-list .cart-item .ticket {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .checkout-list .cart-item .ticket p {
+      display: inline-block; }
+    .checkout-list .cart-item .ticket .number, .checkout-list .cart-item .ticket .price {
+      display: inline-block; }
+      @media (min-width: 768px) {
+        .checkout-list .cart-item .ticket .number, .checkout-list .cart-item .ticket .price {
+          display: none; } }
+  .checkout-list .cart-item .type {
+    color: #707070; }
+  .checkout-list .cart-item .function {
+    height: 100%; }
+  .checkout-list .cart-item .btn-close {
     position: absolute;
-    top: 30%;
+    top: -1rem;
     right: 0; }
+    @media (min-width: 768px) {
+      .checkout-list .cart-item .btn-close {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        top: 37%; } }
 
 .checkout-progress::before {
   content: "";
@@ -11900,7 +12039,6 @@ dl {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: 300;
   font-size: 0.875rem; }
   @media (min-width: 768px) {
     .checkout-progress .step {
@@ -11933,6 +12071,9 @@ dl {
     height: 8px;
     border-radius: 50%;
     background-color: #E31277; }
+
+.checkout-progress .active-text {
+  font-weight: 300; }
 
 .nav-top {
   height: 3.75rem; }
