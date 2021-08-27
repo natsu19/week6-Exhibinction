@@ -308,8 +308,7 @@
 
       <div class="row">
         <!-- 購物車列表 -->
-        <div class="d-none d-lg-block">
-          <div class="col-12 col-lg-8 checkout-list">
+          <div class="col-12 col-lg-8 checkout-list CheckoutList">
     <ul class="list-unstyled">
         <!--------------->
         <li class="mb-5">
@@ -457,19 +456,193 @@
         
     </ul>
 </div>
+        <!-- 購物車列表-鎖定 -->
+          <div class="col-12 col-lg-8 checkout-list mb-12 mb-lg-8 CheckoutList-fixed d-none">
+    <ul class="list-unstyled">
+        <!--------------->
+        <li class="mb-5">
+            <section class="cart-item alert fade show" role="alert">
+                <div class="row flex-nowrap">
+                    <!--資料-->
+                    <div class="img col-5 col-md-3">
+                        <a href="#" class="hover_scale" aria-label="展覽內容" title="了解展覽內容">
+                            <img class="h-md-100 h-lg-auto" src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="2020 台味設計展">
+                        </a>
+                    </div>
+                    <div class="col-7 col-md-4">
+                        <ul class="ps-0 liststyle-none">
+                            <li class="title">2020 台味設計展</li>
+                            <li class="date">01 JUN — 31 OCT</li>
+                            <li class="ticket">
+                                <div>
+                                    <p class="type">全票</p>
+                                    <p class="number">1</p>
+                                </div>
+                                <p class="price">NT$350</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 d-none d-md-block">
+                        <div class="price">
+                            <p>NT$350<p>
+                        </div>
+                    </div>
+                    <!--功能列：張數加減-->
+                    <div class="col-2 d-none d-md-block">
+                        <div class="function">
+                            <a href="#"><i class="fal fa-plus"></i></a>
+                            <p>01</p>
+                            <a href="#"><i class="fal fa-minus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </li>
+
+        <!-------->
+
+        <li class="mb-5">
+            <section class="cart-item alert fade show" role="alert">
+                <div class="row flex-nowrap">
+                    <!--資料-->
+                    <div class="img col-5 col-md-3">
+                        <a href="#" class="hover_scale" aria-label="展覽內容" title="了解展覽內容">
+                            <img src="assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="No.22 線上設計展">
+                        </a>
+                    </div>
+                    <div class="col-7 col-md-4">
+                        <ul class="ps-0">
+                            <li class="title">No.22 線上設計展</li>
+                            <li class="date">01 JUN — 31 OCT</li>
+                            <li class="ticket">
+                                <div>
+                                    <p class="type">全票</p>
+                                    <p class="number">1</p>
+                                </div>
+                                <p class="price">NT$350</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 d-none d-md-block">
+                        <div class="price">
+                            <p>NT$350<p>
+                        </div>
+                    </div>
+                    <!--功能列：張數加減-->
+                    <div class="col-2 d-none d-md-block">
+                        <div class="function">
+                            <a href="#"><i class="fal fa-plus"></i></a>
+                            <p>01</p>
+                            <a href="#"><i class="fal fa-minus"></i></a>
+                        </div>
+                    </div>
+
+                
+                </div>
+            </section>
+        </li>
+
+        <!-------->
+
+        <li class="mb-5">
+            <section class="cart-item alert fade show" role="alert">
+                <div class="row flex-nowrap">
+                    <!--資料-->
+                    <div class="img col-5 col-md-3">
+                        <a href="#" class="hover_scale" aria-label="展覽內容" title="了解展覽內容">
+                            <img class="h-md-100 h-lg-auto" src="assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="高雄設計節">
+                        </a>
+                    </div>
+                    <div class="col-7 col-md-4">
+                        <ul class="ps-0">
+                            <li class="title">高雄設計節</li>
+                            <li class="date">01 JUN — 31 OCT</li>
+                            <li class="ticket">
+                                <div>
+                                    <p class="type">全票</p>
+                                    <p class="number">1</p>
+                                </div>
+                                <p class="price">NT$350</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 d-none d-md-block">
+                        <div class="price">
+                            <p>NT$350<p>
+                        </div>
+                    </div>
+                    <!--功能列：張數加減-->
+                    <div class="col-2 d-none d-md-block">
+                        <div class="function">
+                            <a href="#"><i class="fal fa-plus"></i></a>
+                            <p>01</p>
+                            <a href="#"><i class="fal fa-minus"></i></a>
+                        </div>
+                    </div>
+
+                
+                </div>
+            </section>
+        </li>
+        
+    </ul>
+</div>
+
+        <!-- 訂購人資訊 checkout-2 -->
+          <div class="OrderInfo col-12 col-lg-4 mb-13 d-none">
+    <h4 class="fs-4 fw-medium mb-4 mb-md-5">付款資訊</h4>
+    <form action="" method="post">
+        <div class="mb-5">
+            <label for="InputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="InputEmail" placeholder="example@gmail.com">
         </div>
+        <div class="mb-5">
+            <label for="InputName" class="form-label">姓名</label>
+            <input type="text" class="form-control" id="InputName" placeholder="請輸入姓名">
+        </div>
+        <div class="mb-5">
+            <label for="InputTel" class="form-label">聯絡電話</label>
+            <input type="tel" class="form-control" id="InputTel" placeholder="請輸入電話">
+        </div>
+        <div class="mb-5">
+            <label for="validationCoupon" class="form-text">優惠碼</label>
+            <input type="text" class="form-control" id="validationCoupon" value="TG87526">
+            <div class="fs-9 text-end text-primary">
+              優惠碼已生效
+            </div>
+        </div>
+    </form>
+  </div>   
+        <!-- 付款資訊 checkout-3-->
+          <div class="PaymentInfo col-12 col-lg-4 mb-13 d-none">
+    <h4 class="fs-4 fw-medium mb-4 mb-md-5">付款資訊</h4>
+    <form action="" method="post">
+        <div class="mb-5">
+            <label for="InputCardId" class="form-label">信用卡帳號</label>
+            <input type="email" class="form-control" id="InputCardId" placeholder="Xxxx-xxxx-xxxx-xxxx">
+        </div>
+        <div class="mb-5">
+            <label for="InputExpiryDate" class="form-label">有效日期</label>
+            <input type="text" class="form-control" id="InputExpiryDate" placeholder="(MM/YY)">
+        </div>
+        <div class="mb-5">
+            <label for="InputSecuritycode" class="form-label">安全碼</label>
+            <input type="tel" class="form-control" id="InputSecuritycode" placeholder="***">
+        </div>
+    </form>
+  </div>         
         <!--購物車底部按鈕-->
-        <div class="checkout-bottom bg-white">
+          <div class="checkout-bottom bg-white">
     <div class="container px-0 mx-0 px-lg-auto mx-md-auto">
         <!--step1總額-->
         <div class="row g-0 d-none step-total_1">
-            <div class="col-6 offset-5 col-lg-4 offset-lg-8 mb-3 d-flex justify-content-between">
+            <div class="col-6 col-lg-4 ms-auto mb-3 d-flex justify-content-between">
                 <p class="fw-medium fs-4 mb-0">小計</p>
                 <p class="fw-medium fs-4 mb-0">NT$1050</p>
             </div>
         </div>
         <!--其他step總額-->
-        <div class="row g-0 d-none step-total">
+        <div class="row g-0 d-none step-total mb-6 mb-lg-0">
             <div class="col-12 col-lg-4 offset-lg-8 ">
                 <ul class="list-unstyled">
                     <li class="d-flex justify-content-between">
@@ -487,19 +660,12 @@
                 </ul>
             </div>
         </div>
-        <!-- 購物車列表 -->
-        <div class="d-block d-lg-none mb-8">
-        <div class="col-12 col-lg-8 checkout-list">
+        <!-- 購物車列表-鎖定 -->
+        <div class="col-12 col-lg-8 checkout-list mb-12 mb-lg-8 CheckoutList-fixed d-none">
     <ul class="list-unstyled">
         <!--------------->
         <li class="mb-5">
             <section class="cart-item alert fade show" role="alert">
-                <!--btn-刪除品項-->
-                    <div class="btnClose">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                            <i class="fal fa-times"></i>
-                        </button>
-                    </div>
                 <div class="row flex-nowrap">
                     <!--資料-->
                     <div class="img col-5 col-md-3">
@@ -541,12 +707,6 @@
 
         <li class="mb-5">
             <section class="cart-item alert fade show" role="alert">
-                <!--btn-刪除品項-->
-                    <div class="btnClose">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                        <i class="fal fa-times"></i>
-                        </button>
-                    </div>
                 <div class="row flex-nowrap">
                     <!--資料-->
                     <div class="img col-5 col-md-3">
@@ -590,12 +750,6 @@
 
         <li class="mb-5">
             <section class="cart-item alert fade show" role="alert">
-                <!--btn-刪除品項-->
-                    <div class="btnClose">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                            <i class="fal fa-times"></i>
-                        </button>
-                    </div>
                 <div class="row flex-nowrap">
                     <!--資料-->
                     <div class="img col-5 col-md-3">
@@ -637,31 +791,36 @@
         
     </ul>
 </div>
-        </div>
+
         <div class="row justify-content-between">
-            <div class="col-6 col-md-2 box-btnPrev">
-                <a href="#" class="w-100 btn btn-outline-primary lh-lgimary lh-lg btnPrev">返回</a>
+            <div class="col-6 col-lg-2 box-btnPrev">
+                <a href="#" class="w-100 btn btn-outline-primary lh-lgimary lh-lg btnPrev" role="button">返回</a>
             </div>
             <div class="col-6 col-lg-4 ms-auto g-lg-0 box-NextStep">
-                <a href="" class="w-100 btn btn-secondary lh-lg NextStep">下一步</a>
+                <a href="" class="w-100 btn btn-secondary lh-lg NextStep" role="button">下一步</a>
             </div>
         </div>
     </div>
 </div>
         
+          
     <script>
-        console.log(555)
+        //進度
         const step1 = document.querySelector(".step1");
         step1.classList.add("active-text");
-        
-        //隱藏返回btnß
-        const boxbtnPrev = document.querySelector(".box-btnPrev");
-        boxbtnPrev.classList.add("d-none");
 
-        //total
+        //顯示可編輯購物車
+        const CheckoutList = document.querySelector(".CheckoutList");
+        CheckoutList.classList.remove("d-none");
+
+        //total -顯示step1
         const stepTotal1 = document.querySelector(".step-total_1");
         stepTotal1.classList.remove("d-none");
 
+        //底部按鈕
+        //隱藏返回btn
+            const boxbtnPrev = document.querySelector(".box-btnPrev");
+            boxbtnPrev.classList.add("d-none");
         //下一頁
             const NextStep = document.querySelector(".NextStep");
             NextStep.setAttribute("href","checkout-2.html");
