@@ -1,0 +1,40 @@
+<div class="checkout-bottom bg-white">
+    <div class="container px-0 mx-0 px-lg-auto mx-md-auto">
+        <!--step1總額-->
+        <div class="row g-0 d-none step-total_1">
+            <div class="col-6 col-lg-4 ms-auto mb-3 d-flex justify-content-between">
+                <p class="fw-medium fs-4 mb-0">小計</p>
+                <p class="fw-medium fs-4 mb-0">NT$1050</p>
+            </div>
+        </div>
+        <!--其他step總額-->
+        <div class="row g-0 d-none step-total mb-6 mb-lg-0">
+            <div class="col-12 col-lg-4 offset-lg-8 ">
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between">
+                        <p class="fw-medium mb-0">小計</p>
+                        <p class="fw-light mb-0">NT$1050</p>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <p class="fw-medium mb-0">折扣</p>
+                        <p class="fw-light mb-0">-NT$50</p>
+                    </li>
+                    <li class="d-flex justify-content-between mb-3">
+                        <p class="fw-medium fs-4 mb-0">總金額</p>
+                        <p class="fw-medium fs-4 mb-0">NT$1000</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 購物車列表-鎖定 -->
+        <%- include('_checkout-list-fixed.ejs') %>
+        <div class="row justify-content-between">
+            <div class="col-6 col-lg-2 box-btnPrev">
+                <a href="#" class="w-100 btn btn-outline-primary lh-lgimary lh-lg btnPrev" role="button">返回</a>
+            </div>
+            <div class="col-6 col-lg-4 ms-auto g-lg-0 box-NextStep">
+                <a href="" class="w-100 btn btn-secondary lh-lg NextStep" role="button">下一步</a>
+            </div>
+        </div>
+    </div>
+</div>

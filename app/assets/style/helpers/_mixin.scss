@@ -43,5 +43,65 @@
     @content;
 }
 
+//結帳進度 點點
+@mixin checkout-dot($bg-color) {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-25%);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: $bg-color;
+    @content;
+}
+
+//購物車品項
+@mixin cart-item(){
+    .body,.content{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .title{
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacer;
+    }
+
+    .dete{
+        font-weight: $font-weight-medium;
+        margin-bottom: $spacer;
+    }
+    
+    .price,.number{
+        font-size: $h4-font-size; //20
+        font-weight: $font-weight-bold;
+    }
+
+    .function{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        @include media-breakpoint-up(md){
+            flex-wrap: nowrap;
+        }
+
+        a{
+            display: inline-block;
+            @include link-default;
+            padding: $spacer * 3;
+        }
+        p{
+            margin-bottom: 0;
+            display: inline-block;
+            font-weight: $font-weight-bold;
+            font-size: $h4-font-size;
+        }
+
+    }
+    @content;
+}
+
 
 

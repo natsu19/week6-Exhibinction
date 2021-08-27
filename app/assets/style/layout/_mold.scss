@@ -1,7 +1,8 @@
 // 內頁共用
 .mold-main{
-    margin-top: 3.75rem;
+    padding-top: 3.75rem;
     @include media-breakpoint-up(md){
-        margin-top: 5rem;
+        padding-top: 5rem;
     };
+    position: relative;
   }

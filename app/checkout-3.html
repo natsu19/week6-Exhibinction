@@ -1,0 +1,41 @@
+---
+title: EXHIBINECTION ｜ 展覽 - 購物車
+layout: ./app/layout＿＿checkout.ejs
+engine: ejs
+current: checkout-3
+---
+    
+    <script>
+        //進度
+        //進度調作用中狀態增減
+        const step2 = document.querySelector(".step2");
+        step2.classList.add("active-dot");
+
+        const step3 = document.querySelector(".step3");
+        step3.classList.add("active-text","active-dot");
+
+
+        //顯示付款資訊
+        const PaymentInfo = document.querySelector(".PaymentInfo");
+        PaymentInfo.classList.remove("d-none");
+
+        //顯示已被鎖定的購物車
+        const CheckoutList = document.querySelector(".CheckoutList");
+        CheckoutList.classList.add("d-none");
+        const CheckoutListFixed = document.querySelector(".CheckoutList-fixed");
+        CheckoutListFixed.classList.remove("d-none");
+
+        //total
+        const stepTotal = document.querySelector(".step-total");
+        stepTotal.classList.remove("d-none");
+
+        //底部按鈕
+        //上一頁btn
+        const btnPrev = document.querySelector(".btnPrev");
+        btnPrev.setAttribute("href","checkout-2.html");
+
+        //下一頁
+        const NextStep = document.querySelector(".NextStep");
+        NextStep.setAttribute("href","checkout-4.html");
+    </script>
+    

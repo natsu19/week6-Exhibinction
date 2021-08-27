@@ -1,0 +1,48 @@
+.checkout-progress{
+    &::before{
+        content: "";
+        position: absolute;
+        left: $grid-gutter-width / 2;
+        right: $grid-gutter-width / 2;
+        height: 2px;
+        background-color: $secondary;
+        @include media-breakpoint-up(lg){
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .step{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-weight: $font-weight-light;
+        font-size: 0.875rem;
+        @include media-breakpoint-up(md){
+            font-size: 1rem;
+        }
+
+        p{
+            padding-top: $spacer * 2;
+        }
+        
+        &::before{
+            @include checkout-dot($white){
+                border: 1px solid $secondary;
+            }
+        }
+        
+    }
+    .active{
+        &-dot{
+            &::before{
+                @include checkout-dot($secondary);
+            }
+        }
+        &-text{
+            font-weight: $font-weight-medium;
+        }
+    }
+    
+}
+

@@ -34,8 +34,6 @@
             }
         }
 
-        
-
         & div:nth-of-type(2) img {
             @include media-breakpoint-up(md){
                 @include img-height-fixed(559px)

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="assets/style/all.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+  </head>
+
+  <body>
+    <!---------
+      header
+    ---------->
+    <%- include('_header.ejs') %>
+
+    <!---------
+      main
+    ----------->
+    <main class="mold-main container">
+      <!--進度-->
+      <%- include('_checkout_progress.ejs') %>
+
+      <div class="row">
+        <!-- 購物車列表 -->
+          <%- include('_checkout-list.ejs') %>
+        <!-- 購物車列表-鎖定 -->
+          <%- include('_checkout-list-fixed.ejs') %>
+        <!-- 訂購人資訊 checkout-2 -->
+          <%- include('_orderer-info.ejs') %>   
+        <!-- 付款資訊 checkout-3-->
+          <%- include('_payment-info.ejs') %>         
+        <!--購物車底部按鈕-->
+          <%- include('_checkout-bottom.ejs') %>
+        
+          <%- contents %>
+      </div>
+      
+      
+    </main>
+
+    <!------
+      JS
+    -------->
+    <!--bs5-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+    //關閉品項
+      var alertList = document.querySelectorAll('.alert')
+      alertList.forEach(function (alert) {
+        new bootstrap.Alert(alert)
+      })
+    </script>
+       
+  </body>
+  
+</html>
