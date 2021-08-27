@@ -55,7 +55,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-rgb: 33, 37, 41;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, Lato, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -12026,10 +12026,14 @@ dl {
 .checkout-progress::before {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 0.9375rem;
+  right: 0.9375rem;
   height: 2px;
   background-color: #E31277; }
+  @media (min-width: 992px) {
+    .checkout-progress::before {
+      left: 0;
+      right: 0; } }
 
 .checkout-progress .step {
   position: relative;
@@ -12039,6 +12043,7 @@ dl {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 300;
   font-size: 0.875rem; }
   @media (min-width: 768px) {
     .checkout-progress .step {
@@ -12052,28 +12057,26 @@ dl {
     -webkit-transform: translate(-50%, -25%);
         -ms-transform: translate(-50%, -25%);
             transform: translate(-50%, -25%);
-    width: 8px;
-    height: 8px;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     background-color: #fff;
     border: 1px solid #E31277; }
 
-.checkout-progress .active {
-  font-weight: 500; }
-  .checkout-progress .active::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, -25%);
-        -ms-transform: translate(-50%, -25%);
-            transform: translate(-50%, -25%);
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #E31277; }
+.checkout-progress .active-dot::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -25%);
+      -ms-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #E31277; }
 
 .checkout-progress .active-text {
-  font-weight: 300; }
+  font-weight: 500; }
 
 .nav-top {
   height: 3.75rem; }
@@ -12165,7 +12168,8 @@ dl {
   background-image: url(../images/footer_bg.jpg); }
 
 .mold-main {
-  padding-top: 3.75rem; }
+  padding-top: 3.75rem;
+  position: relative; }
   @media (min-width: 768px) {
     .mold-main {
       padding-top: 5rem; } }
@@ -12250,5 +12254,21 @@ dl {
 
 .exhibinection .content p:first-of-type {
   text-indent: 2rem; }
+
+@media (min-width: 992px) {
+  .checkout-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    padding-bottom: 2.5rem; } }
+
+@media (min-width: 992px) {
+  .step-total {
+    padding-left: 1.875rem; } }
+
+.step-total li {
+  margin-bottom: 0.625rem; }
 
 /*# sourceMappingURL=all.css.map */
