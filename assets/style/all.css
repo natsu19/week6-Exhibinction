@@ -12248,6 +12248,9 @@ dl {
   .checkout-bottom .CheckoutList-fixed {
     display: block !important; } }
 
+.step1-none {
+  display: none !important; }
+
 .OrderComplete {
   height: calc(100vh - 4rem); }
   @media (min-width: 768px) {
