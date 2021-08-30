@@ -54,10 +54,10 @@
   </div>
   <div class="offcanvas-body scrollbar sidebar-cart">
     <!--購物車清單-->
-    <section class="cart-item">
+    <section class="cart-item alert" role="alert">
       <!--btn刪除-->
       <div>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close">
           <i class="fal fa-times"></i>
         </button>
       </div>
@@ -88,10 +88,10 @@
       </div>
     </section>
 
-    <section class="cart-item">
+    <section class="cart-item alert" role="alert">
       <!--btn刪除-->
       <div>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close">
           <i class="fal fa-times"></i>
         </button>
       </div>
@@ -122,10 +122,10 @@
       </div>
     </section>
 
-    <section class="cart-item">
+    <section class="cart-item alert" role="alert">
       <!--btn刪除-->
       <div>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <button type="button" class="btn-close " data-bs-dismiss="alert" data-bs-dismiss="alert" aria-label="Close">
           <i class="fal fa-times"></i>
         </button>
       </div>
@@ -156,10 +156,10 @@
       </div>
     </section>
 
-    <section class="cart-item">
+    <section class="cart-item alert" role="alert">
       <!--btn刪除-->
       <div>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close">
           <i class="fal fa-times"></i>
         </button>
       </div>
@@ -190,10 +190,10 @@
       </div>
     </section>
 
-    <section class="cart-item">
+    <section class="cart-item alert" role="alert">
       <!--btn刪除-->
       <div>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close">
           <i class="fal fa-times"></i>
         </button>
       </div>
@@ -224,10 +224,10 @@
       </div>
     </section>
 
-    <section class="cart-item">
+    <section class="cart-item alert" role="alert">
       <!--btn刪除-->
       <div>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close">
           <i class="fal fa-times"></i>
         </button>
       </div>
@@ -265,7 +265,6 @@
     </div>
     <a href="checkout-1.html" class="btn btn-white lh-lg px-7">前往結帳</a>
   </div>
-  
 </div>
 
 
@@ -273,6 +272,15 @@
         </ul>
     </nav>
   </header>
+
+<script>
+    //關閉品項
+      var alertList = document.querySelectorAll('.alert')
+      alertList.forEach(function (alert) {
+        new bootstrap.Alert(alert)
+      })
+</script>
+       
 
     <!---------
       main
@@ -448,8 +456,6 @@
                             <a href="#"><i class="fal fa-minus"></i></a>
                         </div>
                     </div>
-
-                
                 </div>
             </section>
         </li>
