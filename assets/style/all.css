@@ -11994,7 +11994,7 @@ dl {
         display: flex;
         top: 37%; } }
 
-.checkout-progress::before {
+.Progress::before {
   content: "";
   position: absolute;
   left: 0.9375rem;
@@ -12002,11 +12002,11 @@ dl {
   height: 2px;
   background-color: #E31277; }
   @media (min-width: 992px) {
-    .checkout-progress::before {
+    .Progress::before {
       left: 0;
       right: 0; } }
 
-.checkout-progress .step {
+.Progress .step {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12017,11 +12017,11 @@ dl {
   font-weight: 300;
   font-size: 0.875rem; }
   @media (min-width: 768px) {
-    .checkout-progress .step {
+    .Progress .step {
       font-size: 1rem; } }
-  .checkout-progress .step p {
+  .Progress .step p {
     padding-top: 0.5rem; }
-  .checkout-progress .step::before {
+  .Progress .step::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -12034,7 +12034,7 @@ dl {
     background-color: #fff;
     border: 1px solid #E31277; }
 
-.checkout-progress .active-dot::before {
+.Progress .active-dot::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -12046,7 +12046,7 @@ dl {
   border-radius: 50%;
   background-color: #E31277; }
 
-.checkout-progress .active-text {
+.Progress .active-text {
   font-weight: 500; }
 
 .nav-top {
